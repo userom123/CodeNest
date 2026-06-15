@@ -242,7 +242,7 @@
 
         // Show success message
         feedbackEl.style.display    = 'block';
-        feedbackEl.style.background = 'rgba(16, 185, 129, 0.12)';
+        feedbackEl.style.background = 'rg       ba(16, 185, 129, 0.12)';
         feedbackEl.style.border     = '1px solid rgba(16, 185, 129, 0.30)';
         feedbackEl.style.color      = '#34d399';
         feedbackEl.textContent      = '✅ Message sent! We\'ll get back to you within 24 hours.';
@@ -262,4 +262,6 @@
 
       }, 1400);
     }
+
+    // private policy //
 
