@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Meta Tags -->
-  <meta charset="UTF-8" />  
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Code Nest Studio — Premium Web Development Agency. We build modern, fast, and responsive websites for startups and businesses." />
   <meta name="keywords" content="web development, WordPress, React, landing page, ecommerce, SEO, Maharashtra" />
@@ -55,6 +55,8 @@
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#process">Process</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          
         </ul>
 
         <!-- Desktop CTA -->
@@ -81,6 +83,7 @@
     <a href="#portfolio" onclick="closeMobileMenu()">Work</a>
     <a href="#pricing"   onclick="closeMobileMenu()">Pricing</a>
     <a href="#contact"   onclick="closeMobileMenu()">Contact</a>
+    <a href="#privacy">Privacy Policy</a>
     <a href="#contact"   onclick="closeMobileMenu()" class="btn btn-p">🚀 Start Project</a>
   </div>
 
@@ -310,7 +313,7 @@
 
         <!-- Left: Avatar + Experience badge -->
         <div class="avatar-wrap reveal">
-          <div class="avatar"><img src="om.photo.jpeg"></div>
+          <div class="avatar"><img src="imges/om.photo.jpeg"></div>
           <div class="exp-badge reveal-2">
             <span class="exp-num">1+</span>
             <span class="exp-label">Years Experience</span>
@@ -877,7 +880,7 @@
             <div class="contact-icon">✉️</div>
             <div>
               <div class="contact-label">Email</div>
-              <div class="contact-value">hello@omwaghstudio.com</div>
+              <div class="contact-value">codenest335@gmail.com</div>
             </div>
           </div>
 
@@ -906,6 +909,8 @@
 
         <!-- Right: Contact Form -->
         <div class="contact-form reveal">
+        
+          <form action="https://formspree.io/f/xojzrlkq" method="POST">
 
           <div style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 18px; margin-bottom: 4px;">
             Send a Message
@@ -918,24 +923,25 @@
           <div class="form-row">
             <div class="form-group">
               <label>Your Name *</label>
-              <input type="text" id="field-name" placeholder="John Doe" required />
+              <input type="text" name="Name" id="field-name" placeholder="Rahul --" required />
             </div>
             <div class="form-group">
               <label>Email Address *</label>
-              <input type="email" id="field-email" placeholder="john@company.com" required />
+              <input type="email" name="Email" id="field-email" placeholder="john@company.com" required />
             </div>
           </div>
 
           <!-- Phone -->
           <div class="form-group">
             <label>Phone Number</label>
-            <input type="tel" id="field-phone" placeholder="+91 00000 00000" />
+            <input type="tel" name="Phone" id="field-phone" placeholder="+91 00000 00000" />
           </div>
 
           <!-- Service Dropdown -->
+      
           <div class="form-group">
             <label>Service Required</label>
-            <select id="field-service">
+            <select id="field-service" name="Service">
               <option value="">Select a service...</option>
               <option>Website Development</option>
               <option>WordPress Development</option>
@@ -951,7 +957,7 @@
           <!-- Budget Dropdown -->
           <div class="form-group">
             <label>Budget Range</label>
-            <select id="field-budget">
+            <select id="field-budget" name="Plane">
               <option value="">Select budget range...</option>
               <option>₹4,999 – ₹8,999 (Basic)</option>
               <option>₹12,999 – ₹24,999 (Standard)</option>
@@ -961,23 +967,17 @@
           </div>
 
           <!-- Project Description -->
-          <div class="form-group">
+          <div class="form-group">  
             <label>Tell Us About Your Project *</label>
-            <textarea
+            <textarea name="Text"
               id="field-message"
               placeholder="Describe your project, goals, timeline, and any specific requirements..."
             ></textarea>
           </div>
 
-          <!-- Submit Button -->
-          <button
-            class="btn btn-p"
-            id="submit-btn"
-            onclick="handleFormSubmit(event)"
-            style="width: 100%; padding: 15px; font-size: 15px;"
-          >
-            🚀 Send Message
-          </button>
+              <!-- your other form fields go here -->
+       <button class="submit" type="submit">Send</button>
+  </form> 
 
           <!-- Form Feedback Message -->
           <div
@@ -995,6 +995,167 @@
   <!-- ============================================================
        FOOTER
        ============================================================ -->
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy Popup</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+}
+
+/* Dark Background */
+.overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    z-index:999;
+}
+
+/* Bottom Popup */
+.privacy-popup{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#fff;
+    padding:25px;
+    border-radius:25px 25px 0 0;
+    z-index:1000;
+    box-shadow:0 -10px 30px rgba(0,0,0,.15);
+    animation:slideUp .4s ease;
+}
+
+.popup-handle{
+    width:60px;
+    height:5px;
+    background:#ddd;
+    border-radius:50px;
+    margin:0 auto 20px;
+}
+
+.privacy-popup h2{
+    margin-bottom:10px;
+    color:#111827;
+}
+
+.privacy-popup p{
+    color:#6b7280;
+    line-height:1.7;
+    margin-bottom:15px;
+}
+
+.privacy-popup a{
+    color:#2563eb;
+    text-decoration:none;
+}
+
+#agreeBtn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+#agreeBtn:hover{
+    opacity:.9;
+}
+
+.hide{
+    display:none;
+}
+
+@keyframes slideUp{
+    from{
+        transform:translateY(100%);
+    }
+    to{
+        transform:translateY(0);
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay"></div>
+
+<!-- Popup -->
+<div class="privacy-popup" id="privacyPopup">
+
+    <div class="popup-handle"></div>
+
+    <h2>Privacy Policy</h2>
+
+    <p>
+        We collect your name, email address, phone number and
+        project details to provide our services and improve
+        your experience.
+    </p>
+
+    <p>
+        By continuing to use this website, you agree to our
+        <a href="privacy-policy.html">Privacy Policy</a>
+        and
+        <a href="terms.html">Terms & Conditions</a>.
+    </p>
+
+    <button id="agreeBtn">
+        I Agree & Continue
+    </button>
+
+</div>
+
+<script>
+
+const popup = document.getElementById("privacyPopup");
+const overlay = document.getElementById("overlay");
+const agreeBtn = document.getElementById("agreeBtn");
+
+// Check first visit
+if(localStorage.getItem("privacyAccepted") === "yes"){
+
+    popup.classList.add("hide");
+    overlay.classList.add("hide");
+
+}
+
+// Accept Button
+agreeBtn.addEventListener("click",function(){
+
+    localStorage.setItem("privacyAccepted","yes");
+
+    popup.classList.add("hide");
+    overlay.classList.add("hide");
+
+});
+
+</script>
+
+</body>
+</html>
+
+       
   <footer>
     <div class="container">
 
@@ -1045,7 +1206,7 @@
           <h5>Contact</h5>
           <div class="footer-links">
             <a href="tel:+918459218793">+91 8459218793</a>
-            <a href="mailto:hello@omwaghstudio.com">hello@omwaghstudio.com</a>
+            <a href="mailto:codenest335@gmail.com">codenest335@gmail.com</a>
             <a href="#">Maharashtra, India</a>
             <a href="https://wa.me/918459218793" target="_blank">WhatsApp Us</a>
           </div>
@@ -1056,7 +1217,7 @@
       <!-- Footer Bottom Bar -->
       <div class="footer-bottom">
         <div>© 2025 Code Nest Studio. All rights reserved.</div>
-        <div>Made with ❤️ by CodeNest</div>
+        <div>Made with ❤️ by Code Nest Business</div>
       </div>
 
     </div>
